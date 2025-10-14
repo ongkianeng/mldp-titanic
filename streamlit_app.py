@@ -7,7 +7,7 @@ import joblib
 # Load the trained pipeline
 # This file contains the preprocessor and the model.
 try:
-    pipeline = joblib.load('titanic_model_pipeline.pkl')
+    pipeline = joblib.load('titanic_model.pkl')
 except FileNotFoundError:
     st.error("Model file not found. Please run `train_model.py` first to generate it.")
     st.stop()
